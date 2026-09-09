@@ -2,7 +2,8 @@
 
 ## Project Description
 
-A segmentation-driven analytics system that identifies and analyzes customer churn patterns across geography, demographics, engagement, and financial profiles in European banking.
+
+
 
 ## Objectives
 
@@ -178,6 +179,16 @@ The repository includes `render.yaml` and can be deployed as a Python web servic
 2. Connect the `dharshini0830/European-Bank-Analysis` GitHub repository.
 3. Render will use the included build and start commands.
 4. Deploy the service and open the generated public URL.
+
+## Free HTTPS Deployment on Hugging Face Spaces
+
+If Render requests payment verification, use a free Docker Space instead:
+
+1. Open [Hugging Face Spaces](https://huggingface.co/spaces) and choose **Create new Space**.
+2. Choose **Docker**, set the Space to **Public**, and create it.
+3. Upload the project files, including `Dockerfile`, `app.py`, `templates/`, `requirements.txt`, and `European_Bank_cleaned.csv.xlsx`.
+4. Wait for the build to finish. The public HTTPS URL will be:
+	`https://<your-hugging-face-username>-<space-name>.hf.space`
 
 ## Expected Outcome
 
