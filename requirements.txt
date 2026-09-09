@@ -1,5 +1,6 @@
-streamlit
+Flask
 pandas
 numpy
 plotly
 openpyxl
+gunicorn

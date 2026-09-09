@@ -42,7 +42,7 @@ The project uses a European banking customer dataset containing customer-level i
 * Pandas
 * NumPy
 * Plotly
-* Streamlit
+* Flask
 * Scikit-learn
 * Matplotlib
 * Seaborn
@@ -101,9 +101,9 @@ Customers in the top 25% of account balance are treated as high-value customers.
 * **Geographic Risk Index**
 * **Engagement Drop Indicator**
 
-## Streamlit Dashboard
+## Web Dashboard
 
-The interactive dashboard provides:
+The Flask web dashboard provides:
 
 * Overall churn summary
 * KPI cards
@@ -158,17 +158,26 @@ pip install -r requirements.txt
 
 ## Run the Application
 
-Start the Streamlit dashboard using:
+Start the Flask dashboard using:
 
 ```bash
-streamlit run app.py
+python app.py
 ```
 
 The application will open in the browser at:
 
 ```text
-http://localhost:8501
+http://localhost:5000
 ```
+
+## Deploy on Render
+
+The repository includes `render.yaml` and can be deployed as a Python web service:
+
+1. Open [Render](https://render.com/) and choose **New Web Service**.
+2. Connect the `dharshini0830/European-Bank-Analysis` GitHub repository.
+3. Render will use the included build and start commands.
+4. Deploy the service and open the generated public URL.
 
 ## Expected Outcome
 
